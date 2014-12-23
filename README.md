@@ -8,7 +8,7 @@ The goal is to be able to drop in Casey's platform independent game source code 
 
 I removed Casey's platform-independent game code from this repository. At the moment that is just handmade.cpp and handmade.h.
 
-Once you clone or update from this repository, copy over the handmade.cpp/.h files from Casey's source code to the handmade subdirectory.
+Once you clone or update from this repository, copy over the handmade.cpp/.h files from Casey's source code into the handmadeSrc folder.
 
 This repository works with Casey's handmade.cpp/.h files from handmade_hero_025_source.
 

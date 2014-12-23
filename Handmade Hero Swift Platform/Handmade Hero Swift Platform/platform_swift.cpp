@@ -11,6 +11,7 @@
 #include "platform_swift.h"
 #include "handmadeSrc/handmade.h"
 
+#include <stdlib.h>
 
 DEBUG_PLATFORM_FREE_FILE_MEMORY(DEBUGPlatformFreeFileMemory)
 {

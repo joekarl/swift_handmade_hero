@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB5C97591A4A0F060028C8C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97581A4A0F060028C8C8 /* AppDelegate.swift */; };
+		CB5C975B1A4A0F060028C8C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5C975A1A4A0F060028C8C8 /* Images.xcassets */; };
+		CB5C975E1A4A0F060028C8C8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5C975C1A4A0F060028C8C8 /* MainMenu.xib */; };
+		CB5C976A1A4A0F070028C8C8 /* Handmade_Hero_Swift_PlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97691A4A0F070028C8C8 /* Handmade_Hero_Swift_PlatformTests.swift */; };
+		CB5C97811A4A145B0028C8C8 /* platform_swift.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB5C977F1A4A145B0028C8C8 /* platform_swift.cpp */; };
+		CB5C978B1A4A21BD0028C8C8 /* handmade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97891A4A21BD0028C8C8 /* handmade.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB5C97641A4A0F070028C8C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB5C974B1A4A0F060028C8C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB5C97521A4A0F060028C8C8;
+			remoteInfo = "Handmade Hero Swift Platform";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB5C97531A4A0F060028C8C8 /* Handmade Hero Swift Platform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Handmade Hero Swift Platform.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5C97571A4A0F060028C8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5C97581A4A0F060028C8C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB5C975A1A4A0F060028C8C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB5C975D1A4A0F060028C8C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CB5C97631A4A0F070028C8C8 /* Handmade Hero Swift PlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Handmade Hero Swift PlatformTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5C97681A4A0F070028C8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5C97691A4A0F070028C8C8 /* Handmade_Hero_Swift_PlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handmade_Hero_Swift_PlatformTests.swift; sourceTree = "<group>"; };
+		CB5C97751A4A10FD0028C8C8 /* Handmade Hero Swift Platform-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = "Handmade Hero Swift Platform-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB5C977F1A4A145B0028C8C8 /* platform_swift.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = platform_swift.cpp; sourceTree = "<group>"; };
+		CB5C97801A4A145B0028C8C8 /* platform_swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform_swift.h; sourceTree = "<group>"; };
+		CB5C97891A4A21BD0028C8C8 /* handmade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = handmade.cpp; path = ../../handmadeSrc/handmade.cpp; sourceTree = "<group>"; };
+		CB5C978A1A4A21BD0028C8C8 /* handmade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade.h; path = ../../handmadeSrc/handmade.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB5C97501A4A0F060028C8C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB5C97601A4A0F070028C8C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB5C974A1A4A0F060028C8C8 = {
+			isa = PBXGroup;
+			children = (
+				CB5C97551A4A0F060028C8C8 /* Handmade Hero Swift Platform */,
+				CB5C97661A4A0F070028C8C8 /* Handmade Hero Swift PlatformTests */,
+				CB5C97541A4A0F060028C8C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB5C97541A4A0F060028C8C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB5C97531A4A0F060028C8C8 /* Handmade Hero Swift Platform.app */,
+				CB5C97631A4A0F070028C8C8 /* Handmade Hero Swift PlatformTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB5C97551A4A0F060028C8C8 /* Handmade Hero Swift Platform */ = {
+			isa = PBXGroup;
+			children = (
+				CB5C97781A4A11900028C8C8 /* handmadeSrc */,
+				CB5C97581A4A0F060028C8C8 /* AppDelegate.swift */,
+				CB5C975A1A4A0F060028C8C8 /* Images.xcassets */,
+				CB5C975C1A4A0F060028C8C8 /* MainMenu.xib */,
+				CB5C97561A4A0F060028C8C8 /* Supporting Files */,
+				CB5C97751A4A10FD0028C8C8 /* Handmade Hero Swift Platform-Bridging-Header.h */,
+				CB5C977F1A4A145B0028C8C8 /* platform_swift.cpp */,
+				CB5C97801A4A145B0028C8C8 /* platform_swift.h */,
+			);
+			path = "Handmade Hero Swift Platform";
+			sourceTree = "<group>";
+		};
+		CB5C97561A4A0F060028C8C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB5C97571A4A0F060028C8C8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB5C97661A4A0F070028C8C8 /* Handmade Hero Swift PlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB5C97691A4A0F070028C8C8 /* Handmade_Hero_Swift_PlatformTests.swift */,
+				CB5C97671A4A0F070028C8C8 /* Supporting Files */,
+			);
+			path = "Handmade Hero Swift PlatformTests";
+			sourceTree = "<group>";
+		};
+		CB5C97671A4A0F070028C8C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB5C97681A4A0F070028C8C8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB5C97781A4A11900028C8C8 /* handmadeSrc */ = {
+			isa = PBXGroup;
+			children = (
+				CB5C97891A4A21BD0028C8C8 /* handmade.cpp */,
+				CB5C978A1A4A21BD0028C8C8 /* handmade.h */,
+			);
+			name = handmadeSrc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB5C97521A4A0F060028C8C8 /* Handmade Hero Swift Platform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB5C976D1A4A0F070028C8C8 /* Build configuration list for PBXNativeTarget "Handmade Hero Swift Platform" */;
+			buildPhases = (
+				CB5C974F1A4A0F060028C8C8 /* Sources */,
+				CB5C97501A4A0F060028C8C8 /* Frameworks */,
+				CB5C97511A4A0F060028C8C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Handmade Hero Swift Platform";
+			productName = "Handmade Hero Swift Platform";
+			productReference = CB5C97531A4A0F060028C8C8 /* Handmade Hero Swift Platform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB5C97621A4A0F070028C8C8 /* Handmade Hero Swift PlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB5C97701A4A0F070028C8C8 /* Build configuration list for PBXNativeTarget "Handmade Hero Swift PlatformTests" */;
+			buildPhases = (
+				CB5C975F1A4A0F070028C8C8 /* Sources */,
+				CB5C97601A4A0F070028C8C8 /* Frameworks */,
+				CB5C97611A4A0F070028C8C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB5C97651A4A0F070028C8C8 /* PBXTargetDependency */,
+			);
+			name = "Handmade Hero Swift PlatformTests";
+			productName = "Handmade Hero Swift PlatformTests";
+			productReference = CB5C97631A4A0F070028C8C8 /* Handmade Hero Swift PlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB5C974B1A4A0F060028C8C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Handmade Hero";
+				TargetAttributes = {
+					CB5C97521A4A0F060028C8C8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CB5C97621A4A0F070028C8C8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CB5C97521A4A0F060028C8C8;
+					};
+				};
+			};
+			buildConfigurationList = CB5C974E1A4A0F060028C8C8 /* Build configuration list for PBXProject "Handmade Hero Swift Platform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB5C974A1A4A0F060028C8C8;
+			productRefGroup = CB5C97541A4A0F060028C8C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB5C97521A4A0F060028C8C8 /* Handmade Hero Swift Platform */,
+				CB5C97621A4A0F070028C8C8 /* Handmade Hero Swift PlatformTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB5C97511A4A0F060028C8C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5C975B1A4A0F060028C8C8 /* Images.xcassets in Resources */,
+				CB5C975E1A4A0F060028C8C8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB5C97611A4A0F070028C8C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB5C974F1A4A0F060028C8C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5C978B1A4A21BD0028C8C8 /* handmade.cpp in Sources */,
+				CB5C97811A4A145B0028C8C8 /* platform_swift.cpp in Sources */,
+				CB5C97591A4A0F060028C8C8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB5C975F1A4A0F070028C8C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5C976A1A4A0F070028C8C8 /* Handmade_Hero_Swift_PlatformTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB5C97651A4A0F070028C8C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB5C97521A4A0F060028C8C8 /* Handmade Hero Swift Platform */;
+			targetProxy = CB5C97641A4A0F070028C8C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB5C975C1A4A0F060028C8C8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB5C975D1A4A0F060028C8C8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB5C976B1A4A0F070028C8C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB5C976C1A4A0F070028C8C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CB5C976E1A4A0F070028C8C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = "Handmade Hero Swift Platform/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Handmade Hero Swift Platform/Handmade Hero Swift Platform-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB5C976F1A4A0F070028C8C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = "Handmade Hero Swift Platform/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Handmade Hero Swift Platform/Handmade Hero Swift Platform-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		CB5C97711A4A0F070028C8C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Handmade Hero Swift PlatformTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Handmade Hero Swift Platform.app/Contents/MacOS/Handmade Hero Swift Platform";
+			};
+			name = Debug;
+		};
+		CB5C97721A4A0F070028C8C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Handmade Hero Swift PlatformTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Handmade Hero Swift Platform.app/Contents/MacOS/Handmade Hero Swift Platform";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB5C974E1A4A0F060028C8C8 /* Build configuration list for PBXProject "Handmade Hero Swift Platform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5C976B1A4A0F070028C8C8 /* Debug */,
+				CB5C976C1A4A0F070028C8C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB5C976D1A4A0F070028C8C8 /* Build configuration list for PBXNativeTarget "Handmade Hero Swift Platform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5C976E1A4A0F070028C8C8 /* Debug */,
+				CB5C976F1A4A0F070028C8C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB5C97701A4A0F070028C8C8 /* Build configuration list for PBXNativeTarget "Handmade Hero Swift PlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5C97711A4A0F070028C8C8 /* Debug */,
+				CB5C97721A4A0F070028C8C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB5C974B1A4A0F060028C8C8 /* Project object */;
+}

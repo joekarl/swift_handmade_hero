@@ -9,5 +9,4 @@
 #ifndef __Handmade_Hero_Swift_Platform__platform_swift__
 #define __Handmade_Hero_Swift_Platform__platform_swift__
 
-
 #endif /* defined(__Handmade_Hero_Swift_Platform__platform_swift__) */

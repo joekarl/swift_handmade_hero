@@ -13,6 +13,10 @@
 		CB5C976A1A4A0F070028C8C8 /* Handmade_Hero_Swift_PlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97691A4A0F070028C8C8 /* Handmade_Hero_Swift_PlatformTests.swift */; };
 		CB5C97811A4A145B0028C8C8 /* platform_swift.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB5C977F1A4A145B0028C8C8 /* platform_swift.cpp */; };
 		CB5C978B1A4A21BD0028C8C8 /* handmade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97891A4A21BD0028C8C8 /* handmade.cpp */; };
+		CB5C97931A4A47AE0028C8C8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97921A4A47AE0028C8C8 /* GameView.swift */; };
+		CB5C97951A4A48FE0028C8C8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5C97941A4A48FE0028C8C8 /* OpenGL.framework */; };
+		CB5C97971A4A49110028C8C8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5C97961A4A49110028C8C8 /* CoreVideo.framework */; };
+		CB5C97991A4A7FED0028C8C8 /* DisplayLinkShim.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97981A4A7FED0028C8C8 /* DisplayLinkShim.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,11 @@
 		CB5C97801A4A145B0028C8C8 /* platform_swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform_swift.h; sourceTree = "<group>"; };
 		CB5C97891A4A21BD0028C8C8 /* handmade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = handmade.cpp; path = ../../handmadeSrc/handmade.cpp; sourceTree = "<group>"; };
 		CB5C978A1A4A21BD0028C8C8 /* handmade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade.h; path = ../../handmadeSrc/handmade.h; sourceTree = "<group>"; };
+		CB5C97921A4A47AE0028C8C8 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		CB5C97941A4A48FE0028C8C8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CB5C97961A4A49110028C8C8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CB5C97981A4A7FED0028C8C8 /* DisplayLinkShim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayLinkShim.m; sourceTree = "<group>"; };
+		CB5C979A1A4A800F0028C8C8 /* DisplayLinkShim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayLinkShim.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5C97971A4A49110028C8C8 /* CoreVideo.framework in Frameworks */,
+				CB5C97951A4A48FE0028C8C8 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +73,8 @@
 		CB5C974A1A4A0F060028C8C8 = {
 			isa = PBXGroup;
 			children = (
+				CB5C97961A4A49110028C8C8 /* CoreVideo.framework */,
+				CB5C97941A4A48FE0028C8C8 /* OpenGL.framework */,
 				CB5C97551A4A0F060028C8C8 /* Handmade Hero Swift Platform */,
 				CB5C97661A4A0F070028C8C8 /* Handmade Hero Swift PlatformTests */,
 				CB5C97541A4A0F060028C8C8 /* Products */,
@@ -88,6 +101,9 @@
 				CB5C97751A4A10FD0028C8C8 /* Handmade Hero Swift Platform-Bridging-Header.h */,
 				CB5C977F1A4A145B0028C8C8 /* platform_swift.cpp */,
 				CB5C97801A4A145B0028C8C8 /* platform_swift.h */,
+				CB5C97921A4A47AE0028C8C8 /* GameView.swift */,
+				CB5C97981A4A7FED0028C8C8 /* DisplayLinkShim.m */,
+				CB5C979A1A4A800F0028C8C8 /* DisplayLinkShim.h */,
 			);
 			path = "Handmade Hero Swift Platform";
 			sourceTree = "<group>";
@@ -227,6 +243,8 @@
 			files = (
 				CB5C978B1A4A21BD0028C8C8 /* handmade.cpp in Sources */,
 				CB5C97811A4A145B0028C8C8 /* platform_swift.cpp in Sources */,
+				CB5C97991A4A7FED0028C8C8 /* DisplayLinkShim.m in Sources */,
+				CB5C97931A4A47AE0028C8C8 /* GameView.swift in Sources */,
 				CB5C97591A4A0F060028C8C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +364,7 @@
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				GCC_INPUT_FILETYPE = automatic;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					"HANDMADE_INTERNAL=1",
@@ -368,6 +387,7 @@
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = "Handmade Hero Swift Platform/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

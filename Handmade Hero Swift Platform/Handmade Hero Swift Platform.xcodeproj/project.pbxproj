@@ -11,12 +11,17 @@
 		CB5C975B1A4A0F060028C8C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5C975A1A4A0F060028C8C8 /* Images.xcassets */; };
 		CB5C975E1A4A0F060028C8C8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5C975C1A4A0F060028C8C8 /* MainMenu.xib */; };
 		CB5C976A1A4A0F070028C8C8 /* Handmade_Hero_Swift_PlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97691A4A0F070028C8C8 /* Handmade_Hero_Swift_PlatformTests.swift */; };
-		CB5C97811A4A145B0028C8C8 /* platform_swift.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB5C977F1A4A145B0028C8C8 /* platform_swift.cpp */; };
-		CB5C978B1A4A21BD0028C8C8 /* handmade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97891A4A21BD0028C8C8 /* handmade.cpp */; };
 		CB5C97931A4A47AE0028C8C8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97921A4A47AE0028C8C8 /* GameView.swift */; };
 		CB5C97951A4A48FE0028C8C8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5C97941A4A48FE0028C8C8 /* OpenGL.framework */; };
 		CB5C97971A4A49110028C8C8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5C97961A4A49110028C8C8 /* CoreVideo.framework */; };
 		CB5C97991A4A7FED0028C8C8 /* DisplayLinkShim.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97981A4A7FED0028C8C8 /* DisplayLinkShim.m */; };
+		CB60F0421A4D0AC900492AB5 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60F0411A4D0AC900492AB5 /* Helpers.swift */; };
+		CB60F0611A4D395700492AB5 /* libHandmade Hero Dylib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB60F0581A4D38C500492AB5 /* libHandmade Hero Dylib.dylib */; };
+		CB60F0631A4D39C100492AB5 /* libHandmade Hero Dylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB60F0581A4D38C500492AB5 /* libHandmade Hero Dylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CB60F0651A4DB2F000492AB5 /* PlatformLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60F0641A4DB2F000492AB5 /* PlatformLayer.swift */; };
+		CB60F0671A4DB46700492AB5 /* GameCodeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60F0661A4DB46700492AB5 /* GameCodeLoader.swift */; };
+		CB60F06C1A4DC92A00492AB5 /* GameCodeShim.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60F06B1A4DC92A00492AB5 /* GameCodeShim.m */; };
+		CBB1504D1A4BE67700723D10 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB1504C1A4BE67700723D10 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +32,34 @@
 			remoteGlobalIDString = CB5C97521A4A0F060028C8C8;
 			remoteInfo = "Handmade Hero Swift Platform";
 		};
+		CB60F0571A4D38C500492AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB60F0531A4D38C400492AB5 /* Handmade Hero Dylib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB60F04C1A4D38C400492AB5;
+			remoteInfo = "Handmade Hero Dylib";
+		};
+		CB60F05F1A4D394000492AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB60F0531A4D38C400492AB5 /* Handmade Hero Dylib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB60F04B1A4D38C400492AB5;
+			remoteInfo = "Handmade Hero Dylib";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB60F0621A4D39B500492AB5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB60F0631A4D39C100492AB5 /* libHandmade Hero Dylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB5C97531A4A0F060028C8C8 /* Handmade Hero Swift Platform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Handmade Hero Swift Platform.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,15 +71,20 @@
 		CB5C97681A4A0F070028C8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5C97691A4A0F070028C8C8 /* Handmade_Hero_Swift_PlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handmade_Hero_Swift_PlatformTests.swift; sourceTree = "<group>"; };
 		CB5C97751A4A10FD0028C8C8 /* Handmade Hero Swift Platform-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = "Handmade Hero Swift Platform-Bridging-Header.h"; sourceTree = "<group>"; };
-		CB5C977F1A4A145B0028C8C8 /* platform_swift.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = platform_swift.cpp; sourceTree = "<group>"; };
-		CB5C97801A4A145B0028C8C8 /* platform_swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform_swift.h; sourceTree = "<group>"; };
-		CB5C97891A4A21BD0028C8C8 /* handmade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = handmade.cpp; path = ../../handmadeSrc/handmade.cpp; sourceTree = "<group>"; };
-		CB5C978A1A4A21BD0028C8C8 /* handmade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade.h; path = ../../handmadeSrc/handmade.h; sourceTree = "<group>"; };
 		CB5C97921A4A47AE0028C8C8 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		CB5C97941A4A48FE0028C8C8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		CB5C97961A4A49110028C8C8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		CB5C97981A4A7FED0028C8C8 /* DisplayLinkShim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayLinkShim.m; sourceTree = "<group>"; };
 		CB5C979A1A4A800F0028C8C8 /* DisplayLinkShim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayLinkShim.h; sourceTree = "<group>"; };
+		CB60F0401A4D079A00492AB5 /* handmade_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = handmade_platform.h; sourceTree = "<group>"; };
+		CB60F0411A4D0AC900492AB5 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		CB60F0531A4D38C400492AB5 /* Handmade Hero Dylib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Handmade Hero Dylib.xcodeproj"; path = "Handmade Hero Dylib/Handmade Hero Dylib.xcodeproj"; sourceTree = "<group>"; };
+		CB60F0641A4DB2F000492AB5 /* PlatformLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformLayer.swift; sourceTree = "<group>"; };
+		CB60F0661A4DB46700492AB5 /* GameCodeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCodeLoader.swift; sourceTree = "<group>"; };
+		CB60F06A1A4DC91600492AB5 /* GameCodeShim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCodeShim.h; sourceTree = "<group>"; };
+		CB60F06B1A4DC92A00492AB5 /* GameCodeShim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCodeShim.m; sourceTree = "<group>"; };
+		CBB1504A1A4BE5FF00723D10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CBB1504C1A4BE67700723D10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB60F0611A4D395700492AB5 /* libHandmade Hero Dylib.dylib in Frameworks */,
+				CBB1504D1A4BE67700723D10 /* Cocoa.framework in Frameworks */,
 				CB5C97971A4A49110028C8C8 /* CoreVideo.framework in Frameworks */,
 				CB5C97951A4A48FE0028C8C8 /* OpenGL.framework in Frameworks */,
 			);
@@ -73,11 +112,14 @@
 		CB5C974A1A4A0F060028C8C8 = {
 			isa = PBXGroup;
 			children = (
-				CB5C97961A4A49110028C8C8 /* CoreVideo.framework */,
-				CB5C97941A4A48FE0028C8C8 /* OpenGL.framework */,
+				CB60F0531A4D38C400492AB5 /* Handmade Hero Dylib.xcodeproj */,
 				CB5C97551A4A0F060028C8C8 /* Handmade Hero Swift Platform */,
 				CB5C97661A4A0F070028C8C8 /* Handmade Hero Swift PlatformTests */,
 				CB5C97541A4A0F060028C8C8 /* Products */,
+				CBB1504C1A4BE67700723D10 /* Cocoa.framework */,
+				CBB1504A1A4BE5FF00723D10 /* Foundation.framework */,
+				CB5C97961A4A49110028C8C8 /* CoreVideo.framework */,
+				CB5C97941A4A48FE0028C8C8 /* OpenGL.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,17 +135,20 @@
 		CB5C97551A4A0F060028C8C8 /* Handmade Hero Swift Platform */ = {
 			isa = PBXGroup;
 			children = (
-				CB5C97781A4A11900028C8C8 /* handmadeSrc */,
+				CB60F03A1A4C04BC00492AB5 /* handmadeSrc */,
 				CB5C97581A4A0F060028C8C8 /* AppDelegate.swift */,
 				CB5C975A1A4A0F060028C8C8 /* Images.xcassets */,
 				CB5C975C1A4A0F060028C8C8 /* MainMenu.xib */,
 				CB5C97561A4A0F060028C8C8 /* Supporting Files */,
 				CB5C97751A4A10FD0028C8C8 /* Handmade Hero Swift Platform-Bridging-Header.h */,
-				CB5C977F1A4A145B0028C8C8 /* platform_swift.cpp */,
-				CB5C97801A4A145B0028C8C8 /* platform_swift.h */,
 				CB5C97921A4A47AE0028C8C8 /* GameView.swift */,
 				CB5C97981A4A7FED0028C8C8 /* DisplayLinkShim.m */,
 				CB5C979A1A4A800F0028C8C8 /* DisplayLinkShim.h */,
+				CB60F0411A4D0AC900492AB5 /* Helpers.swift */,
+				CB60F0641A4DB2F000492AB5 /* PlatformLayer.swift */,
+				CB60F0661A4DB46700492AB5 /* GameCodeLoader.swift */,
+				CB60F06A1A4DC91600492AB5 /* GameCodeShim.h */,
+				CB60F06B1A4DC92A00492AB5 /* GameCodeShim.m */,
 			);
 			path = "Handmade Hero Swift Platform";
 			sourceTree = "<group>";
@@ -133,13 +178,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CB5C97781A4A11900028C8C8 /* handmadeSrc */ = {
+		CB60F03A1A4C04BC00492AB5 /* handmadeSrc */ = {
 			isa = PBXGroup;
 			children = (
-				CB5C97891A4A21BD0028C8C8 /* handmade.cpp */,
-				CB5C978A1A4A21BD0028C8C8 /* handmade.h */,
+				CB60F0401A4D079A00492AB5 /* handmade_platform.h */,
 			);
 			name = handmadeSrc;
+			path = ../../handmadeSrc;
+			sourceTree = "<group>";
+		};
+		CB60F0541A4D38C400492AB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB60F0581A4D38C500492AB5 /* libHandmade Hero Dylib.dylib */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,10 +205,12 @@
 				CB5C974F1A4A0F060028C8C8 /* Sources */,
 				CB5C97501A4A0F060028C8C8 /* Frameworks */,
 				CB5C97511A4A0F060028C8C8 /* Resources */,
+				CB60F0621A4D39B500492AB5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB60F0601A4D394000492AB5 /* PBXTargetDependency */,
 			);
 			name = "Handmade Hero Swift Platform";
 			productName = "Handmade Hero Swift Platform";
@@ -209,6 +264,12 @@
 			mainGroup = CB5C974A1A4A0F060028C8C8;
 			productRefGroup = CB5C97541A4A0F060028C8C8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CB60F0541A4D38C400492AB5 /* Products */;
+					ProjectRef = CB60F0531A4D38C400492AB5 /* Handmade Hero Dylib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CB5C97521A4A0F060028C8C8 /* Handmade Hero Swift Platform */,
@@ -216,6 +277,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CB60F0581A4D38C500492AB5 /* libHandmade Hero Dylib.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = "libHandmade Hero Dylib.dylib";
+			remoteRef = CB60F0571A4D38C500492AB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CB5C97511A4A0F060028C8C8 /* Resources */ = {
@@ -241,10 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5C978B1A4A21BD0028C8C8 /* handmade.cpp in Sources */,
-				CB5C97811A4A145B0028C8C8 /* platform_swift.cpp in Sources */,
+				CB60F06C1A4DC92A00492AB5 /* GameCodeShim.m in Sources */,
 				CB5C97991A4A7FED0028C8C8 /* DisplayLinkShim.m in Sources */,
 				CB5C97931A4A47AE0028C8C8 /* GameView.swift in Sources */,
+				CB60F0671A4DB46700492AB5 /* GameCodeLoader.swift in Sources */,
+				CB60F0421A4D0AC900492AB5 /* Helpers.swift in Sources */,
+				CB60F0651A4DB2F000492AB5 /* PlatformLayer.swift in Sources */,
 				CB5C97591A4A0F060028C8C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +337,11 @@
 			isa = PBXTargetDependency;
 			target = CB5C97521A4A0F060028C8C8 /* Handmade Hero Swift Platform */;
 			targetProxy = CB5C97641A4A0F070028C8C8 /* PBXContainerItemProxy */;
+		};
+		CB60F0601A4D394000492AB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Handmade Hero Dylib";
+			targetProxy = CB60F05F1A4D394000492AB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -360,14 +438,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
-				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				GCC_INPUT_FILETYPE = automatic;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					"HANDMADE_INTERNAL=1",
+					"HANDMADE_SLOW=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Handmade Hero Swift Platform/Info.plist";
@@ -383,12 +462,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
-				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				GCC_INPUT_FILETYPE = automatic;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "HANDMADE_INTERNAL=1";
 				INFOPLIST_FILE = "Handmade Hero Swift Platform/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;

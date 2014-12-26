@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB60F05C1A4D392600492AB5 /* handmade_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = CB60F0591A4D392600492AB5 /* handmade_platform.h */; };
+		CB60F05D1A4D392600492AB5 /* handmade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB60F05A1A4D392600492AB5 /* handmade.cpp */; };
+		CB60F05E1A4D392600492AB5 /* handmade.h in Headers */ = {isa = PBXBuildFile; fileRef = CB60F05B1A4D392600492AB5 /* handmade.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB60F04C1A4D38C400492AB5 /* libHandmade Hero Dylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libHandmade Hero Dylib.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB60F0591A4D392600492AB5 /* handmade_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade_platform.h; path = ../../handmadeSrc/handmade_platform.h; sourceTree = "<group>"; };
+		CB60F05A1A4D392600492AB5 /* handmade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = handmade.cpp; path = ../../handmadeSrc/handmade.cpp; sourceTree = "<group>"; };
+		CB60F05B1A4D392600492AB5 /* handmade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade.h; path = ../../handmadeSrc/handmade.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB60F0491A4D38C400492AB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB60F0431A4D38C400492AB5 = {
+			isa = PBXGroup;
+			children = (
+				CB60F0591A4D392600492AB5 /* handmade_platform.h */,
+				CB60F05A1A4D392600492AB5 /* handmade.cpp */,
+				CB60F05B1A4D392600492AB5 /* handmade.h */,
+				CB60F04D1A4D38C400492AB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB60F04D1A4D38C400492AB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB60F04C1A4D38C400492AB5 /* libHandmade Hero Dylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CB60F04A1A4D38C400492AB5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB60F05E1A4D392600492AB5 /* handmade.h in Headers */,
+				CB60F05C1A4D392600492AB5 /* handmade_platform.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CB60F04B1A4D38C400492AB5 /* Handmade Hero Dylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB60F0501A4D38C400492AB5 /* Build configuration list for PBXNativeTarget "Handmade Hero Dylib" */;
+			buildPhases = (
+				CB60F0481A4D38C400492AB5 /* Sources */,
+				CB60F0491A4D38C400492AB5 /* Frameworks */,
+				CB60F04A1A4D38C400492AB5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Handmade Hero Dylib";
+			productName = "Handmade Hero Dylib";
+			productReference = CB60F04C1A4D38C400492AB5 /* libHandmade Hero Dylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB60F0441A4D38C400492AB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Handmade Hero";
+				TargetAttributes = {
+					CB60F04B1A4D38C400492AB5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = CB60F0471A4D38C400492AB5 /* Build configuration list for PBXProject "Handmade Hero Dylib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CB60F0431A4D38C400492AB5;
+			productRefGroup = CB60F04D1A4D38C400492AB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB60F04B1A4D38C400492AB5 /* Handmade Hero Dylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB60F0481A4D38C400492AB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB60F05D1A4D392600492AB5 /* handmade.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB60F04E1A4D38C400492AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CB60F04F1A4D38C400492AB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CB60F0511A4D38C400492AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"HANDMADE_INTERNAL=1",
+					"HANDMADE_SLOW=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB60F0521A4D38C400492AB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "HANDMADE_INTERNAL=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB60F0471A4D38C400492AB5 /* Build configuration list for PBXProject "Handmade Hero Dylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB60F04E1A4D38C400492AB5 /* Debug */,
+				CB60F04F1A4D38C400492AB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB60F0501A4D38C400492AB5 /* Build configuration list for PBXNativeTarget "Handmade Hero Dylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB60F0511A4D38C400492AB5 /* Debug */,
+				CB60F0521A4D38C400492AB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB60F0441A4D38C400492AB5 /* Project object */;
+}

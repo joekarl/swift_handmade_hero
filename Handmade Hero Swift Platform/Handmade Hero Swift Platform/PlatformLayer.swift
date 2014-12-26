@@ -38,16 +38,6 @@ class PlatformLayer {
         
         var totalBufferSize = gameOffscreenBuffer.memory.Pitch * gameOffscreenBuffer.memory.Height
         gameOffscreenBuffer.memory.Memory = UnsafeMutablePointer<Void>.alloc(Int(totalBufferSize))
-        
-        var pixelPtr = unsafeBitCast(gameOffscreenBuffer.memory.Memory, UnsafeMutablePointer<UInt32>.self)
-        for y in 0 ... (gameOffscreenBuffer.memory.Height - 1) {
-            for x in 0 ... (gameOffscreenBuffer.memory.Width - 1) {
-                // everytime through the loop, advance by one pixel
-                pixelPtr = pixelPtr.advancedBy(1)
-                let pixelVal = UInt32(0xFFFF0000) //ARGB here
-                pixelPtr.memory = pixelVal
-            }
-        }
 
         // load our dylib game code
         gameCodeLoader.loadGameCode()

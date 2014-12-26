@@ -29,7 +29,6 @@ class PlatformLayer {
         gameMemory.memory.TransientStorageSize = TransientStorageSize
         gameMemory.memory.PermanentStorage = UnsafeMutablePointer<Void>.alloc(Int(permanantStorageSize))
         gameMemory.memory.TransientStorage = UnsafeMutablePointer<Void>.alloc(Int(TransientStorageSize))
-        gameMemory.memory.IsInitialized = 1 //true
         
         
         gameOffscreenBuffer.memory.Width = 800

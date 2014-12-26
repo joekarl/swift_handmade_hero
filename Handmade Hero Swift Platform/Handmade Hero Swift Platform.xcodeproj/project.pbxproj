@@ -16,7 +16,6 @@
 		CB5C97971A4A49110028C8C8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5C97961A4A49110028C8C8 /* CoreVideo.framework */; };
 		CB5C97991A4A7FED0028C8C8 /* DisplayLinkShim.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97981A4A7FED0028C8C8 /* DisplayLinkShim.m */; };
 		CB60F0421A4D0AC900492AB5 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60F0411A4D0AC900492AB5 /* Helpers.swift */; };
-		CB60F0611A4D395700492AB5 /* libHandmade Hero Dylib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB60F0581A4D38C500492AB5 /* libHandmade Hero Dylib.dylib */; };
 		CB60F0631A4D39C100492AB5 /* libHandmade Hero Dylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB60F0581A4D38C500492AB5 /* libHandmade Hero Dylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CB60F0651A4DB2F000492AB5 /* PlatformLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60F0641A4DB2F000492AB5 /* PlatformLayer.swift */; };
 		CB60F0671A4DB46700492AB5 /* GameCodeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60F0661A4DB46700492AB5 /* GameCodeLoader.swift */; };
@@ -92,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB60F0611A4D395700492AB5 /* libHandmade Hero Dylib.dylib in Frameworks */,
 				CBB1504D1A4BE67700723D10 /* Cocoa.framework in Frameworks */,
 				CB5C97971A4A49110028C8C8 /* CoreVideo.framework in Frameworks */,
 				CB5C97951A4A48FE0028C8C8 /* OpenGL.framework in Frameworks */,

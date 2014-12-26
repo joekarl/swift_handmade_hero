@@ -16,8 +16,6 @@ class GameCodeLoader {
     var lastLoadTime = NSDate()
     var dylibRef = UnsafeMutablePointer<Void>.null()
     
-    var LastWriteTime: time_t = 0
-    
     init() {
         let frameworksPath = NSBundle.mainBundle().privateFrameworksPath
         let dylibName = "libHandmade Hero Dylib.dylib"
@@ -75,7 +73,7 @@ class GameCodeLoader {
         
         if (dylibRef != UnsafeMutablePointer<Void>.null()) {
             dlclose(dylibRef)
-            //dylibRef = UnsafeMutablePointer<Void>.null()
+            dylibRef = UnsafeMutablePointer<Void>.null()
         }
         
         // null out our pointers for good measure...

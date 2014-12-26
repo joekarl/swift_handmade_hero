@@ -60,6 +60,7 @@ class PlatformLayer {
         
         // sanity check
         if (gameCodeLoader.isInitialized) {
+            // run function pointer in objc b/c swift can't call function pointers o_0
             shimCallGameUpdateAndRenderFn(gameCodeLoader.gameUpdateAndRenderFn, gameThreadContext, gameMemory, gameInput, gameOffscreenBuffer)
         }
     }

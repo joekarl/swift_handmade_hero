@@ -31,8 +31,8 @@ class PlatformLayer {
         gameMemory.memory.TransientStorage = UnsafeMutablePointer<Void>.alloc(Int(TransientStorageSize))
         
         
-        gameOffscreenBuffer.memory.Width = 800
-        gameOffscreenBuffer.memory.Height = 600
+        gameOffscreenBuffer.memory.Width = 960
+        gameOffscreenBuffer.memory.Height = 540
         gameOffscreenBuffer.memory.BytesPerPixel = 4
         gameOffscreenBuffer.memory.Pitch = gameOffscreenBuffer.memory.Width * gameOffscreenBuffer.memory.BytesPerPixel
         

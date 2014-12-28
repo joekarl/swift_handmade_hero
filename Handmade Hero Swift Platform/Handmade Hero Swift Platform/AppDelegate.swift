@@ -12,11 +12,11 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    @IBOutlet weak var gameView: GameView!
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
-        
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -27,5 +27,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
     
+    
+    func applicationDidBecomeActive(notification: NSNotification) {
+        gameView.setAppIsActive(true)
+    }
+    
+    func applicationDidResignActive(notification: NSNotification) {
+        gameView.setAppIsActive(false)
+    }
 }
 

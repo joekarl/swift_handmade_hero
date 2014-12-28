@@ -9,8 +9,6 @@
 import Foundation
 
 class PlatformLayer {
-    // lock for safely updating input
-    var inputLock = NSLock()
     
     // uninitialized pointers to our platform layer memory
     var gameMemory = UnsafeMutablePointer<game_memory>.alloc(1)
@@ -19,9 +17,14 @@ class PlatformLayer {
     var gameThreadContext = UnsafeMutablePointer<thread_context>.null()
     
     // game code loader
-    var gameCodeLoader = GameCodeLoader()
+    private var gameCodeLoader = GameCodeLoader()
     
-    init() {
+    // input manager
+    private let inputManager: InputManager
+    
+    init(anInputManager: InputManager) {
+        inputManager = anInputManager
+        
         // initialize all of our memory
         let permanantStorageSize = Helpers.megabytes(64)
         let TransientStorageSize = Helpers.gigabytes(1)
@@ -47,12 +50,16 @@ class PlatformLayer {
         // reload our dylib if it's changed
         gameCodeLoader.reloadGameCodeIfNeeded()
         
+        // update input state
+        inputManager.updateInputState(gameInput)
+        
+        // have to do this every frame because of me copying over all of the input state :/
+        gameInput.memory.dtForFrame = 1.0 / 60.0
+        
         // sanity check
         if (gameCodeLoader.isInitialized) {
             // run function pointer in objc b/c swift can't call function pointers o_0
             shimCallGameUpdateAndRenderFn(gameCodeLoader.gameUpdateAndRenderFn, gameThreadContext, gameMemory, gameInput, gameOffscreenBuffer)
         }
     }
-    
-    
 }

@@ -42,7 +42,14 @@ import CoreVideo
     // pointer to an uninitialized CVDisplayLinkRef
     var displayLink = UnsafeMutablePointer<Unmanaged<CVDisplayLink>?>.alloc(1)
     
-    var platformLayer = PlatformLayer()
+    let inputManager = InputManager()
+    
+    var platformLayer: PlatformLayer
+
+    required init?(coder: NSCoder) {
+        platformLayer = PlatformLayer(anInputManager: inputManager)
+        super.init(coder: coder)
+    }
     
     override func awakeFromNib() {
         let pf = NSOpenGLPixelFormat(attributes: pixelFormatAttrs)
@@ -204,5 +211,22 @@ import CoreVideo
         CGLUnlockContext(openGLContext.CGLContextObj);
     }
     
+    
+    func setAppIsActive(active: Bool) {
+        inputManager.shouldProcessInput = active
+    }
+    
+    // accept first responder and ignore keyboard events because we handle them in the input manager
+    func acceptsFirstResponder() -> Bool {
+        return true;
+    }
+    
+    override func keyDown(theEvent: NSEvent) {
+        // noop
+    }
+    
+    override func keyUp(theEvent: NSEvent) {
+        // noop
+    }
 }
 

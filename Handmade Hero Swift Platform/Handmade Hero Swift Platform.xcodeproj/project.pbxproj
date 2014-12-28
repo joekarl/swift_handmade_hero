@@ -14,13 +14,14 @@
 		CB5C97931A4A47AE0028C8C8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97921A4A47AE0028C8C8 /* GameView.swift */; };
 		CB5C97951A4A48FE0028C8C8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5C97941A4A48FE0028C8C8 /* OpenGL.framework */; };
 		CB5C97971A4A49110028C8C8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5C97961A4A49110028C8C8 /* CoreVideo.framework */; };
-		CB5C97991A4A7FED0028C8C8 /* DisplayLinkShim.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97981A4A7FED0028C8C8 /* DisplayLinkShim.m */; };
+		CB5C97991A4A7FED0028C8C8 /* ObjCShim.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5C97981A4A7FED0028C8C8 /* ObjCShim.m */; };
 		CB60F0421A4D0AC900492AB5 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60F0411A4D0AC900492AB5 /* Helpers.swift */; };
 		CB60F0631A4D39C100492AB5 /* libHandmade Hero Dylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB60F0581A4D38C500492AB5 /* libHandmade Hero Dylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CB60F0651A4DB2F000492AB5 /* PlatformLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60F0641A4DB2F000492AB5 /* PlatformLayer.swift */; };
 		CB60F0671A4DB46700492AB5 /* GameCodeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60F0661A4DB46700492AB5 /* GameCodeLoader.swift */; };
-		CB60F06C1A4DC92A00492AB5 /* GameCodeShim.m in Sources */ = {isa = PBXBuildFile; fileRef = CB60F06B1A4DC92A00492AB5 /* GameCodeShim.m */; };
 		CBB1504D1A4BE67700723D10 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB1504C1A4BE67700723D10 /* Cocoa.framework */; };
+		CBBDABE51A4F50D400FF8EC0 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDABE41A4F50D400FF8EC0 /* InputManager.swift */; };
+		CBBDABE71A4F521300FF8EC0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBDABE61A4F521300FF8EC0 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,17 +74,17 @@
 		CB5C97921A4A47AE0028C8C8 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		CB5C97941A4A48FE0028C8C8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		CB5C97961A4A49110028C8C8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		CB5C97981A4A7FED0028C8C8 /* DisplayLinkShim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayLinkShim.m; sourceTree = "<group>"; };
-		CB5C979A1A4A800F0028C8C8 /* DisplayLinkShim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayLinkShim.h; sourceTree = "<group>"; };
+		CB5C97981A4A7FED0028C8C8 /* ObjCShim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCShim.m; sourceTree = "<group>"; };
+		CB5C979A1A4A800F0028C8C8 /* ObjCShim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCShim.h; sourceTree = "<group>"; };
 		CB60F0401A4D079A00492AB5 /* handmade_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = handmade_platform.h; sourceTree = "<group>"; };
 		CB60F0411A4D0AC900492AB5 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		CB60F0531A4D38C400492AB5 /* Handmade Hero Dylib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Handmade Hero Dylib.xcodeproj"; path = "Handmade Hero Dylib/Handmade Hero Dylib.xcodeproj"; sourceTree = "<group>"; };
 		CB60F0641A4DB2F000492AB5 /* PlatformLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformLayer.swift; sourceTree = "<group>"; };
 		CB60F0661A4DB46700492AB5 /* GameCodeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCodeLoader.swift; sourceTree = "<group>"; };
-		CB60F06A1A4DC91600492AB5 /* GameCodeShim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCodeShim.h; sourceTree = "<group>"; };
-		CB60F06B1A4DC92A00492AB5 /* GameCodeShim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCodeShim.m; sourceTree = "<group>"; };
 		CBB1504A1A4BE5FF00723D10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CBB1504C1A4BE67700723D10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CBBDABE41A4F50D400FF8EC0 /* InputManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
+		CBBDABE61A4F521300FF8EC0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBDABE71A4F521300FF8EC0 /* IOKit.framework in Frameworks */,
 				CBB1504D1A4BE67700723D10 /* Cocoa.framework in Frameworks */,
 				CB5C97971A4A49110028C8C8 /* CoreVideo.framework in Frameworks */,
 				CB5C97951A4A48FE0028C8C8 /* OpenGL.framework in Frameworks */,
@@ -114,6 +116,7 @@
 				CB5C97551A4A0F060028C8C8 /* Handmade Hero Swift Platform */,
 				CB5C97661A4A0F070028C8C8 /* Handmade Hero Swift PlatformTests */,
 				CB5C97541A4A0F060028C8C8 /* Products */,
+				CBBDABE61A4F521300FF8EC0 /* IOKit.framework */,
 				CBB1504C1A4BE67700723D10 /* Cocoa.framework */,
 				CBB1504A1A4BE5FF00723D10 /* Foundation.framework */,
 				CB5C97961A4A49110028C8C8 /* CoreVideo.framework */,
@@ -140,13 +143,12 @@
 				CB5C97561A4A0F060028C8C8 /* Supporting Files */,
 				CB5C97751A4A10FD0028C8C8 /* Handmade Hero Swift Platform-Bridging-Header.h */,
 				CB5C97921A4A47AE0028C8C8 /* GameView.swift */,
-				CB5C97981A4A7FED0028C8C8 /* DisplayLinkShim.m */,
-				CB5C979A1A4A800F0028C8C8 /* DisplayLinkShim.h */,
+				CB5C97981A4A7FED0028C8C8 /* ObjCShim.m */,
+				CB5C979A1A4A800F0028C8C8 /* ObjCShim.h */,
 				CB60F0411A4D0AC900492AB5 /* Helpers.swift */,
 				CB60F0641A4DB2F000492AB5 /* PlatformLayer.swift */,
 				CB60F0661A4DB46700492AB5 /* GameCodeLoader.swift */,
-				CB60F06A1A4DC91600492AB5 /* GameCodeShim.h */,
-				CB60F06B1A4DC92A00492AB5 /* GameCodeShim.m */,
+				CBBDABE41A4F50D400FF8EC0 /* InputManager.swift */,
 			);
 			path = "Handmade Hero Swift Platform";
 			sourceTree = "<group>";
@@ -310,8 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB60F06C1A4DC92A00492AB5 /* GameCodeShim.m in Sources */,
-				CB5C97991A4A7FED0028C8C8 /* DisplayLinkShim.m in Sources */,
+				CBBDABE51A4F50D400FF8EC0 /* InputManager.swift in Sources */,
+				CB5C97991A4A7FED0028C8C8 /* ObjCShim.m in Sources */,
 				CB5C97931A4A47AE0028C8C8 /* GameView.swift in Sources */,
 				CB60F0671A4DB46700492AB5 /* GameCodeLoader.swift in Sources */,
 				CB60F0421A4D0AC900492AB5 /* Helpers.swift in Sources */,

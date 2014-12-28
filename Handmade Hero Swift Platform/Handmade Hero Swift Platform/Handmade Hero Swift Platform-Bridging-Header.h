@@ -8,12 +8,14 @@
 #import <OpenGL/glext.h>
 #import <OpenGL/glu.h>
 
+// include IOKit/HID
+#import <IOKit/hid/IOHIDLib.h>
+
 // include platform layer header
 #import "handmadeSrc/handmade_platform.h"
 
 // include the obj shims
-#import "DisplayLinkShim.h"
-#import "GameCodeShim.h"
+#import "ObjCShim.h"
 
 // include dylib handling code
 #import <dlfcn.h>

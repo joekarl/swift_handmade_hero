@@ -4,6 +4,9 @@ This is an ongoing OSX version of a platform layer for Casey Muratori's Handmade
 
 The goal is to be able to drop in Casey's platform independent game source code and compile and run it unchanged.
 
+###Xcode
+I'm using xcode 6.1.1 on OSX 10.9.5.
+
 ###dylib support
 The platform independent layer is wrapped up in a dylib and is loaded dynamically by the platform layer. This allows the code to be reloaded at runtime by simply building the dylib. Due to the way xcode projects work, this is as simple as building the main project (⌘-b or ⌘-⏎-b).
 

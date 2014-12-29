@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB60F05C1A4D392600492AB5 /* handmade_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = CB60F0591A4D392600492AB5 /* handmade_platform.h */; };
-		CB60F05D1A4D392600492AB5 /* handmade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB60F05A1A4D392600492AB5 /* handmade.cpp */; };
-		CB60F05E1A4D392600492AB5 /* handmade.h in Headers */ = {isa = PBXBuildFile; fileRef = CB60F05B1A4D392600492AB5 /* handmade.h */; };
+		CB469B691A50D9450000A950 /* handmade_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = CB469B661A50D9450000A950 /* handmade_platform.h */; };
+		CB469B6A1A50D9450000A950 /* handmade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB469B671A50D9450000A950 /* handmade.cpp */; };
+		CB469B6B1A50D9450000A950 /* handmade.h in Headers */ = {isa = PBXBuildFile; fileRef = CB469B681A50D9450000A950 /* handmade.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB469B661A50D9450000A950 /* handmade_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade_platform.h; path = ../handmadeSrc/handmade_platform.h; sourceTree = "<group>"; };
+		CB469B671A50D9450000A950 /* handmade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = handmade.cpp; path = ../handmadeSrc/handmade.cpp; sourceTree = "<group>"; };
+		CB469B681A50D9450000A950 /* handmade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade.h; path = ../handmadeSrc/handmade.h; sourceTree = "<group>"; };
 		CB60F04C1A4D38C400492AB5 /* libHandmade Hero Dylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libHandmade Hero Dylib.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB60F0591A4D392600492AB5 /* handmade_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade_platform.h; path = ../../handmadeSrc/handmade_platform.h; sourceTree = "<group>"; };
-		CB60F05A1A4D392600492AB5 /* handmade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = handmade.cpp; path = ../../handmadeSrc/handmade.cpp; sourceTree = "<group>"; };
-		CB60F05B1A4D392600492AB5 /* handmade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade.h; path = ../../handmadeSrc/handmade.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,9 +33,9 @@
 		CB60F0431A4D38C400492AB5 = {
 			isa = PBXGroup;
 			children = (
-				CB60F0591A4D392600492AB5 /* handmade_platform.h */,
-				CB60F05A1A4D392600492AB5 /* handmade.cpp */,
-				CB60F05B1A4D392600492AB5 /* handmade.h */,
+				CB469B661A50D9450000A950 /* handmade_platform.h */,
+				CB469B671A50D9450000A950 /* handmade.cpp */,
+				CB469B681A50D9450000A950 /* handmade.h */,
 				CB60F04D1A4D38C400492AB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,8 +55,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB60F05E1A4D392600492AB5 /* handmade.h in Headers */,
-				CB60F05C1A4D392600492AB5 /* handmade_platform.h in Headers */,
+				CB469B6B1A50D9450000A950 /* handmade.h in Headers */,
+				CB469B691A50D9450000A950 /* handmade_platform.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB60F05D1A4D392600492AB5 /* handmade.cpp in Sources */,
+				CB469B6A1A50D9450000A950 /* handmade.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +242,7 @@
 				CB60F0521A4D38C400492AB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

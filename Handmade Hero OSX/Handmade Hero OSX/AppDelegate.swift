@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Handmade Hero Swift Platform
+//  Handmade Hero OSX
 //
-//  Created by Karl Kirch on 12/23/14.
+//  Created by Karl Kirch on 12/28/14.
 //  Copyright (c) 2014 Handmade Hero. All rights reserved.
 //
 
@@ -13,16 +13,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var gameView: GameView!
-
-
+    
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
     }
-
+    
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
+    
     func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
         return true
     }
@@ -35,5 +35,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidResignActive(notification: NSNotification) {
         gameView.setAppIsActive(false)
     }
+
 }
 

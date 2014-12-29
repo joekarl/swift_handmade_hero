@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB469B461A50D8A40000A950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB469B451A50D8A40000A950 /* AppDelegate.swift */; };
+		CB469B481A50D8A40000A950 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB469B471A50D8A40000A950 /* Images.xcassets */; };
+		CB469B4B1A50D8A40000A950 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB469B491A50D8A40000A950 /* MainMenu.xib */; };
+		CB469B571A50D8A40000A950 /* Handmade_Hero_OSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB469B561A50D8A40000A950 /* Handmade_Hero_OSXTests.swift */; };
+		CB469B741A50D9DE0000A950 /* GameCodeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB469B6C1A50D9DE0000A950 /* GameCodeLoader.swift */; };
+		CB469B751A50D9DE0000A950 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB469B6D1A50D9DE0000A950 /* GameView.swift */; };
+		CB469B761A50D9DE0000A950 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB469B6F1A50D9DE0000A950 /* Helpers.swift */; };
+		CB469B771A50D9DE0000A950 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB469B701A50D9DE0000A950 /* InputManager.swift */; };
+		CB469B781A50D9DE0000A950 /* ObjCShim.m in Sources */ = {isa = PBXBuildFile; fileRef = CB469B721A50D9DE0000A950 /* ObjCShim.m */; };
+		CB469B791A50D9DE0000A950 /* PlatformLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB469B731A50D9DE0000A950 /* PlatformLayer.swift */; };
+		CB469B7B1A50D9F90000A950 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB469B7A1A50D9F90000A950 /* OpenGL.framework */; };
+		CB469B7D1A50DA000000A950 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB469B7C1A50DA000000A950 /* CoreVideo.framework */; };
+		CB469B7F1A50DA090000A950 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB469B7E1A50DA090000A950 /* IOKit.framework */; };
+		CB469B851A50DB090000A950 /* libHandmade Hero Dylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB469B651A50D8D90000A950 /* libHandmade Hero Dylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB469B511A50D8A40000A950 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB469B381A50D8A40000A950 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB469B3F1A50D8A40000A950;
+			remoteInfo = "Handmade Hero OSX";
+		};
+		CB469B641A50D8D90000A950 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB469B601A50D8D90000A950 /* Handmade Hero Dylib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB60F04C1A4D38C400492AB5;
+			remoteInfo = "Handmade Hero Dylib";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB469B841A50DAFE0000A950 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB469B851A50DB090000A950 /* libHandmade Hero Dylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CB469B401A50D8A40000A950 /* Handmade Hero OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Handmade Hero OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB469B441A50D8A40000A950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB469B451A50D8A40000A950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB469B471A50D8A40000A950 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB469B4A1A50D8A40000A950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CB469B501A50D8A40000A950 /* Handmade Hero OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Handmade Hero OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB469B551A50D8A40000A950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB469B561A50D8A40000A950 /* Handmade_Hero_OSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handmade_Hero_OSXTests.swift; sourceTree = "<group>"; };
+		CB469B601A50D8D90000A950 /* Handmade Hero Dylib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Handmade Hero Dylib.xcodeproj"; path = "../Handmade Hero Dylib/Handmade Hero Dylib.xcodeproj"; sourceTree = "<group>"; };
+		CB469B6C1A50D9DE0000A950 /* GameCodeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCodeLoader.swift; sourceTree = "<group>"; };
+		CB469B6D1A50D9DE0000A950 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		CB469B6E1A50D9DE0000A950 /* Handmade Hero OSX-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Handmade Hero OSX-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB469B6F1A50D9DE0000A950 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		CB469B701A50D9DE0000A950 /* InputManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
+		CB469B711A50D9DE0000A950 /* ObjCShim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCShim.h; sourceTree = "<group>"; };
+		CB469B721A50D9DE0000A950 /* ObjCShim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCShim.m; sourceTree = "<group>"; };
+		CB469B731A50D9DE0000A950 /* PlatformLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformLayer.swift; sourceTree = "<group>"; };
+		CB469B7A1A50D9F90000A950 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CB469B7C1A50DA000000A950 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CB469B7E1A50DA090000A950 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		CB469B821A50DA880000A950 /* handmade_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade_platform.h; path = ../../handmadeSrc/handmade_platform.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB469B3D1A50D8A40000A950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB469B7F1A50DA090000A950 /* IOKit.framework in Frameworks */,
+				CB469B7D1A50DA000000A950 /* CoreVideo.framework in Frameworks */,
+				CB469B7B1A50D9F90000A950 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB469B4D1A50D8A40000A950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB469B371A50D8A40000A950 = {
+			isa = PBXGroup;
+			children = (
+				CB469B601A50D8D90000A950 /* Handmade Hero Dylib.xcodeproj */,
+				CB469B421A50D8A40000A950 /* Handmade Hero OSX */,
+				CB469B531A50D8A40000A950 /* Handmade Hero OSXTests */,
+				CB469B411A50D8A40000A950 /* Products */,
+				CB469B7E1A50DA090000A950 /* IOKit.framework */,
+				CB469B7C1A50DA000000A950 /* CoreVideo.framework */,
+				CB469B7A1A50D9F90000A950 /* OpenGL.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		CB469B411A50D8A40000A950 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB469B401A50D8A40000A950 /* Handmade Hero OSX.app */,
+				CB469B501A50D8A40000A950 /* Handmade Hero OSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB469B421A50D8A40000A950 /* Handmade Hero OSX */ = {
+			isa = PBXGroup;
+			children = (
+				CB469B831A50DA8C0000A950 /* Handmade Hero Headers */,
+				CB469B6C1A50D9DE0000A950 /* GameCodeLoader.swift */,
+				CB469B6D1A50D9DE0000A950 /* GameView.swift */,
+				CB469B6E1A50D9DE0000A950 /* Handmade Hero OSX-Bridging-Header.h */,
+				CB469B6F1A50D9DE0000A950 /* Helpers.swift */,
+				CB469B701A50D9DE0000A950 /* InputManager.swift */,
+				CB469B711A50D9DE0000A950 /* ObjCShim.h */,
+				CB469B721A50D9DE0000A950 /* ObjCShim.m */,
+				CB469B731A50D9DE0000A950 /* PlatformLayer.swift */,
+				CB469B451A50D8A40000A950 /* AppDelegate.swift */,
+				CB469B471A50D8A40000A950 /* Images.xcassets */,
+				CB469B491A50D8A40000A950 /* MainMenu.xib */,
+				CB469B431A50D8A40000A950 /* Supporting Files */,
+			);
+			path = "Handmade Hero OSX";
+			sourceTree = "<group>";
+		};
+		CB469B431A50D8A40000A950 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB469B441A50D8A40000A950 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB469B531A50D8A40000A950 /* Handmade Hero OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB469B561A50D8A40000A950 /* Handmade_Hero_OSXTests.swift */,
+				CB469B541A50D8A40000A950 /* Supporting Files */,
+			);
+			path = "Handmade Hero OSXTests";
+			sourceTree = "<group>";
+		};
+		CB469B541A50D8A40000A950 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB469B551A50D8A40000A950 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB469B611A50D8D90000A950 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB469B651A50D8D90000A950 /* libHandmade Hero Dylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB469B831A50DA8C0000A950 /* Handmade Hero Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CB469B821A50DA880000A950 /* handmade_platform.h */,
+			);
+			name = "Handmade Hero Headers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB469B3F1A50D8A40000A950 /* Handmade Hero OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB469B5A1A50D8A40000A950 /* Build configuration list for PBXNativeTarget "Handmade Hero OSX" */;
+			buildPhases = (
+				CB469B3C1A50D8A40000A950 /* Sources */,
+				CB469B3D1A50D8A40000A950 /* Frameworks */,
+				CB469B3E1A50D8A40000A950 /* Resources */,
+				CB469B841A50DAFE0000A950 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Handmade Hero OSX";
+			productName = "Handmade Hero OSX";
+			productReference = CB469B401A50D8A40000A950 /* Handmade Hero OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB469B4F1A50D8A40000A950 /* Handmade Hero OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB469B5D1A50D8A40000A950 /* Build configuration list for PBXNativeTarget "Handmade Hero OSXTests" */;
+			buildPhases = (
+				CB469B4C1A50D8A40000A950 /* Sources */,
+				CB469B4D1A50D8A40000A950 /* Frameworks */,
+				CB469B4E1A50D8A40000A950 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB469B521A50D8A40000A950 /* PBXTargetDependency */,
+			);
+			name = "Handmade Hero OSXTests";
+			productName = "Handmade Hero OSXTests";
+			productReference = CB469B501A50D8A40000A950 /* Handmade Hero OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB469B381A50D8A40000A950 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Handmade Hero";
+				TargetAttributes = {
+					CB469B3F1A50D8A40000A950 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CB469B4F1A50D8A40000A950 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CB469B3F1A50D8A40000A950;
+					};
+				};
+			};
+			buildConfigurationList = CB469B3B1A50D8A40000A950 /* Build configuration list for PBXProject "Handmade Hero OSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB469B371A50D8A40000A950;
+			productRefGroup = CB469B411A50D8A40000A950 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CB469B611A50D8D90000A950 /* Products */;
+					ProjectRef = CB469B601A50D8D90000A950 /* Handmade Hero Dylib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CB469B3F1A50D8A40000A950 /* Handmade Hero OSX */,
+				CB469B4F1A50D8A40000A950 /* Handmade Hero OSXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CB469B651A50D8D90000A950 /* libHandmade Hero Dylib.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = "libHandmade Hero Dylib.dylib";
+			remoteRef = CB469B641A50D8D90000A950 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB469B3E1A50D8A40000A950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB469B481A50D8A40000A950 /* Images.xcassets in Resources */,
+				CB469B4B1A50D8A40000A950 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB469B4E1A50D8A40000A950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB469B3C1A50D8A40000A950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB469B771A50D9DE0000A950 /* InputManager.swift in Sources */,
+				CB469B461A50D8A40000A950 /* AppDelegate.swift in Sources */,
+				CB469B781A50D9DE0000A950 /* ObjCShim.m in Sources */,
+				CB469B751A50D9DE0000A950 /* GameView.swift in Sources */,
+				CB469B741A50D9DE0000A950 /* GameCodeLoader.swift in Sources */,
+				CB469B761A50D9DE0000A950 /* Helpers.swift in Sources */,
+				CB469B791A50D9DE0000A950 /* PlatformLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB469B4C1A50D8A40000A950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB469B571A50D8A40000A950 /* Handmade_Hero_OSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB469B521A50D8A40000A950 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB469B3F1A50D8A40000A950 /* Handmade Hero OSX */;
+			targetProxy = CB469B511A50D8A40000A950 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB469B491A50D8A40000A950 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB469B4A1A50D8A40000A950 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB469B581A50D8A40000A950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB469B591A50D8A40000A950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CB469B5B1A50D8A40000A950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"HANDMADE_INTERNAL=1",
+					"HANDMADE_SLOW=1",
+				);
+				INFOPLIST_FILE = "Handmade Hero OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Handmade Hero OSX/Handmade Hero OSX-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		CB469B5C1A50D8A40000A950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "HANDMADE_INTERNAL=1";
+				INFOPLIST_FILE = "Handmade Hero OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Handmade Hero OSX/Handmade Hero OSX-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		CB469B5E1A50D8A40000A950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Handmade Hero OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Handmade Hero OSX.app/Contents/MacOS/Handmade Hero OSX";
+			};
+			name = Debug;
+		};
+		CB469B5F1A50D8A40000A950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Handmade Hero OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Handmade Hero OSX.app/Contents/MacOS/Handmade Hero OSX";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB469B3B1A50D8A40000A950 /* Build configuration list for PBXProject "Handmade Hero OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB469B581A50D8A40000A950 /* Debug */,
+				CB469B591A50D8A40000A950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB469B5A1A50D8A40000A950 /* Build configuration list for PBXNativeTarget "Handmade Hero OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB469B5B1A50D8A40000A950 /* Debug */,
+				CB469B5C1A50D8A40000A950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB469B5D1A50D8A40000A950 /* Build configuration list for PBXNativeTarget "Handmade Hero OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB469B5E1A50D8A40000A950 /* Debug */,
+				CB469B5F1A50D8A40000A950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB469B381A50D8A40000A950 /* Project object */;
+}

@@ -1,15 +1,15 @@
 //
-//  Handmade_Hero_Swift_PlatformTests.swift
-//  Handmade Hero Swift PlatformTests
+//  Handmade_Hero_OSXTests.swift
+//  Handmade Hero OSXTests
 //
-//  Created by Karl Kirch on 12/23/14.
+//  Created by Karl Kirch on 12/28/14.
 //  Copyright (c) 2014 Handmade Hero. All rights reserved.
 //
 
 import Cocoa
 import XCTest
 
-class Handmade_Hero_Swift_PlatformTests: XCTestCase {
+class Handmade_Hero_OSXTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

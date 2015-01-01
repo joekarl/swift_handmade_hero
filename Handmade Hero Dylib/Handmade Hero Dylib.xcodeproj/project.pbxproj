@@ -10,6 +10,7 @@
 		CB469B691A50D9450000A950 /* handmade_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = CB469B661A50D9450000A950 /* handmade_platform.h */; };
 		CB469B6A1A50D9450000A950 /* handmade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB469B671A50D9450000A950 /* handmade.cpp */; };
 		CB469B6B1A50D9450000A950 /* handmade.h in Headers */ = {isa = PBXBuildFile; fileRef = CB469B681A50D9450000A950 /* handmade.h */; };
+		CBD97E151A54F237006CCBFB /* handmade_intrinsics.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD97E141A54F237006CCBFB /* handmade_intrinsics.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		CB469B671A50D9450000A950 /* handmade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = handmade.cpp; path = ../handmadeSrc/handmade.cpp; sourceTree = "<group>"; };
 		CB469B681A50D9450000A950 /* handmade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade.h; path = ../handmadeSrc/handmade.h; sourceTree = "<group>"; };
 		CB60F04C1A4D38C400492AB5 /* libHandmade Hero Dylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libHandmade Hero Dylib.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD97E141A54F237006CCBFB /* handmade_intrinsics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade_intrinsics.h; path = ../handmadeSrc/handmade_intrinsics.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 		CB60F0431A4D38C400492AB5 = {
 			isa = PBXGroup;
 			children = (
+				CBD97E141A54F237006CCBFB /* handmade_intrinsics.h */,
 				CB469B661A50D9450000A950 /* handmade_platform.h */,
 				CB469B671A50D9450000A950 /* handmade.cpp */,
 				CB469B681A50D9450000A950 /* handmade.h */,
@@ -55,6 +58,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD97E151A54F237006CCBFB /* handmade_intrinsics.h in Headers */,
 				CB469B6B1A50D9450000A950 /* handmade.h in Headers */,
 				CB469B691A50D9450000A950 /* handmade_platform.h in Headers */,
 			);

@@ -5,7 +5,7 @@ This is an ongoing OSX version of a platform layer for Casey Muratori's Handmade
 The goal is to be able to drop in Casey's platform independent game source code and compile and run it unchanged.
 
 ###Xcode
-I'm using xcode 6.1.1 on OSX 10.9.5.
+I'm using xcode 6.1.1 on OSX 10.9.5. This targets 10.9 using the OSX 10.10 SDK.
 
 ###dylib support
 The platform independent layer is wrapped up in a dylib and is loaded dynamically by the platform layer. This allows the code to be reloaded at runtime by simply building the dylib. Due to the way xcode projects work, this is as simple as building the main project (⌘-b or ⌘-⏎-b).
@@ -20,11 +20,11 @@ So Swift is nice and all, but any API that takes a function pointer or needs to 
 
 ####IMPORTANT
 
-I removed Casey's platform-independent game code from this repository. At the moment that is just handmade.cpp and handmade.h and handmade_platform.h.
+I removed Casey's platform-independent game code from this repository. At the moment that is just handmade.cpp and handmade.h and handmade_platform.h and handmade_intrinsics.h.
 
 Once you clone or update from this repository, copy over the handmade .cpp/.h files from Casey's source code into the handmadeSrc folder (don't copy the platform layer files, just the platform independent files).
 
-This repository works with Casey's handmade .cpp/.h files from handmade_hero_030_source.
+This repository works with Casey's handmade .cpp/.h files from handmade_hero_033_source.
 
 ####Author
 

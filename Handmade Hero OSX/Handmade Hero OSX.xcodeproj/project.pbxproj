@@ -499,6 +499,7 @@
 				CB469B5C1A50D8A40000A950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB469B5D1A50D8A40000A950 /* Build configuration list for PBXNativeTarget "Handmade Hero OSXTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +508,7 @@
 				CB469B5F1A50D8A40000A950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

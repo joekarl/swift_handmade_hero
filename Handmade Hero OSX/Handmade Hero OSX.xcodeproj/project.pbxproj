@@ -21,6 +21,8 @@
 		CB469B7D1A50DA000000A950 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB469B7C1A50DA000000A950 /* CoreVideo.framework */; };
 		CB469B7F1A50DA090000A950 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB469B7E1A50DA090000A950 /* IOKit.framework */; };
 		CB469B851A50DB090000A950 /* libHandmade Hero Dylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB469B651A50D8D90000A950 /* libHandmade Hero Dylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CBD97E171A54F662006CCBFB /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD97E161A54F662006CCBFB /* SoundManager.swift */; };
+		CBD97E191A54FB92006CCBFB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD97E181A54FB92006CCBFB /* CoreAudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		CB469B7C1A50DA000000A950 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		CB469B7E1A50DA090000A950 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		CB469B821A50DA880000A950 /* handmade_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade_platform.h; path = ../../handmadeSrc/handmade_platform.h; sourceTree = "<group>"; };
+		CBD97E161A54F662006CCBFB /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		CBD97E181A54FB92006CCBFB /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD97E191A54FB92006CCBFB /* CoreAudio.framework in Frameworks */,
 				CB469B7F1A50DA090000A950 /* IOKit.framework in Frameworks */,
 				CB469B7D1A50DA000000A950 /* CoreVideo.framework in Frameworks */,
 				CB469B7B1A50D9F90000A950 /* OpenGL.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		CB469B371A50D8A40000A950 = {
 			isa = PBXGroup;
 			children = (
+				CBD97E181A54FB92006CCBFB /* CoreAudio.framework */,
 				CB469B601A50D8D90000A950 /* Handmade Hero Dylib.xcodeproj */,
 				CB469B421A50D8A40000A950 /* Handmade Hero OSX */,
 				CB469B531A50D8A40000A950 /* Handmade Hero OSXTests */,
@@ -124,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				CB469B831A50DA8C0000A950 /* Handmade Hero Headers */,
+				CB469B451A50D8A40000A950 /* AppDelegate.swift */,
 				CB469B6C1A50D9DE0000A950 /* GameCodeLoader.swift */,
 				CB469B6D1A50D9DE0000A950 /* GameView.swift */,
 				CB469B6E1A50D9DE0000A950 /* Handmade Hero OSX-Bridging-Header.h */,
@@ -132,7 +139,7 @@
 				CB469B711A50D9DE0000A950 /* ObjCShim.h */,
 				CB469B721A50D9DE0000A950 /* ObjCShim.m */,
 				CB469B731A50D9DE0000A950 /* PlatformLayer.swift */,
-				CB469B451A50D8A40000A950 /* AppDelegate.swift */,
+				CBD97E161A54F662006CCBFB /* SoundManager.swift */,
 				CB469B471A50D8A40000A950 /* Images.xcassets */,
 				CB469B491A50D8A40000A950 /* MainMenu.xib */,
 				CB469B431A50D8A40000A950 /* Supporting Files */,
@@ -298,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB469B771A50D9DE0000A950 /* InputManager.swift in Sources */,
+				CBD97E171A54F662006CCBFB /* SoundManager.swift in Sources */,
 				CB469B461A50D8A40000A950 /* AppDelegate.swift in Sources */,
 				CB469B781A50D9DE0000A950 /* ObjCShim.m in Sources */,
 				CB469B751A50D9DE0000A950 /* GameView.swift in Sources */,

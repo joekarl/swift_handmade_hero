@@ -12,7 +12,7 @@
 // This is available after setting Defines Module to YES in the Build Settings for the project
 #import "Handmade_Hero_OSX-Swift.h"
 
-CVReturn DisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTimeStamp *now,
+CVReturn displayLinkCallback(CVDisplayLinkRef displayLink, const CVTimeStamp *now,
                              const CVTimeStamp *outputTime, CVOptionFlags flagsIn,
                              CVOptionFlags *flagsOut, void *displayLinkContext)
 {
@@ -27,7 +27,22 @@ CVReturn DisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTimeStamp *no
 
 CVDisplayLinkOutputCallback getDisplayLinkCallback()
 {
-    return DisplayLinkCallback;
+    return displayLinkCallback;
+}
+
+OSStatus coreAudioCallback(void* inRefCon,
+                           AudioUnitRenderActionFlags* ioActionFlags,
+                           const AudioTimeStamp* inTimeStamp,
+                           UInt32 inBusNumber,
+                           UInt32 inNumberFrames,
+                           AudioBufferList* ioData)
+{
+    return [(__bridge SoundManager*)inRefCon coreAudioCallback:inRefCon ioActionFlags:ioActionFlags inTimeStamp:inTimeStamp inBusNumber:inBusNumber inNumberFrames:inNumberFrames ioData:ioData];
+}
+
+AURenderCallback getCoreAudioCallback()
+{
+    return coreAudioCallback;
 }
 
 void shimCallGameUpdateAndRenderFn(game_update_and_render fn,
@@ -37,6 +52,14 @@ void shimCallGameUpdateAndRenderFn(game_update_and_render fn,
                                    game_offscreen_buffer* buffer)
 {
     fn(threadContext, memory, input, buffer);
+}
+
+void shimCallGameGetSoundSamplesFn(game_get_sound_samples fn,
+                                   thread_context* threadContext,
+                                   game_memory* memory,
+                                   game_sound_output_buffer* buffer)
+{
+    fn(threadContext, memory, buffer);
 }
 
 void hidDeviceAdded(void* context, IOReturn result, void* sender, IOHIDDeviceRef device)

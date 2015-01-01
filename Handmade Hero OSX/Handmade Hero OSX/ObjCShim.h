@@ -11,13 +11,23 @@
 
 #import <CoreVideo/CoreVideo.h>
 #import <IOKit/hid/IOHIDLib.h>
+#import <AudioUnit/AudioUnit.h>
 #include "handmade_platform.h"
 
 // Display link shims
-CVReturn DisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTimeStamp *now,
+CVReturn displayLinkCallback(CVDisplayLinkRef displayLink, const CVTimeStamp *now,
                              const CVTimeStamp *outputTime, CVOptionFlags flagsIn,
                              CVOptionFlags *flagsOut, void *displayLinkContext);
 CVDisplayLinkOutputCallback getDisplayLinkCallback();
+
+// Core Audio shims
+OSStatus coreAudioCallback(void* inRefCon,
+                           AudioUnitRenderActionFlags* ioActionFlags,
+                           const AudioTimeStamp* inTimeStamp,
+                           UInt32 inBusNumber,
+                           UInt32 inNumberFrames,
+                           AudioBufferList* ioData);
+AURenderCallback getCoreAudioCallback();
 
 // Platform indepent layer shims
 void shimCallGameUpdateAndRenderFn(game_update_and_render fn,
@@ -25,6 +35,11 @@ void shimCallGameUpdateAndRenderFn(game_update_and_render fn,
                                    game_memory* memory,
                                    game_input* input,
                                    game_offscreen_buffer* buffer);
+
+void shimCallGameGetSoundSamplesFn(game_get_sound_samples fn,
+                                   thread_context* threadContext,
+                                   game_memory* memory,
+                                   game_sound_output_buffer* buffer);
 
 // HID lib shims
 void hidDeviceAdded(void* context, IOReturn result, void* sender, IOHIDDeviceRef device);

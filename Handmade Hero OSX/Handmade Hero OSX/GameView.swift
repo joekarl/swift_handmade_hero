@@ -15,10 +15,14 @@ import CoreVideo
     // textureId that we'll use to store reference to our opengl texture
     var textureId: GLuint = GLuint()
     // pixel format attributes
-    let pixelFormatAttrs: [NSOpenGLPixelFormatAttribute] = [
-//        UInt32(NSOpenGLPFADoubleBuffer),
-//        UInt32(NSOpenGLPFAAccelerated),
-//        UInt32(NSOpenGLPFADepthSize), UInt32(24),
+    let pixelFormatAttrsBestCase: [NSOpenGLPixelFormatAttribute] = [
+        UInt32(NSOpenGLPFADoubleBuffer),
+        UInt32(NSOpenGLPFAAccelerated),
+        UInt32(NSOpenGLPFADepthSize), UInt32(24),
+        UInt32(0)
+    ]
+    let pixelFormatAttrsFallbackCase: [NSOpenGLPixelFormatAttribute] = [
+        UInt32(NSOpenGLPFADepthSize), UInt32(24),
         UInt32(0)
     ]
     // list of vertices we'll use for defining our triangles
@@ -52,7 +56,15 @@ import CoreVideo
     }
     
     override func awakeFromNib() {
-        let pf = NSOpenGLPixelFormat(attributes: pixelFormatAttrs)
+        var pf = NSOpenGLPixelFormat(attributes: pixelFormatAttrsBestCase)
+        if (pf == nil) {
+            NSLog("Couldn't init opengl the way we wanted, using fallback")
+            pf = NSOpenGLPixelFormat(attributes: pixelFormatAttrsFallbackCase)
+        }
+        if (pf == nil) {
+            NSLog("Couldn't init opengl at all, sorry :(")
+            abort()
+        }
         let glContext = NSOpenGLContext(format: pf, shareContext: nil)
         self.pixelFormat = pf
         self.openGLContext = glContext

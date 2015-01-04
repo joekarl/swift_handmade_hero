@@ -16,9 +16,9 @@ import CoreVideo
     var textureId: GLuint = GLuint()
     // pixel format attributes
     let pixelFormatAttrs: [NSOpenGLPixelFormatAttribute] = [
-        UInt32(NSOpenGLPFADoubleBuffer),
-        UInt32(NSOpenGLPFAAccelerated),
-        UInt32(NSOpenGLPFADepthSize), UInt32(24),
+//        UInt32(NSOpenGLPFADoubleBuffer),
+//        UInt32(NSOpenGLPFAAccelerated),
+//        UInt32(NSOpenGLPFADepthSize), UInt32(24),
         UInt32(0)
     ]
     // list of vertices we'll use for defining our triangles
@@ -165,6 +165,8 @@ import CoreVideo
         
         glDisableClientState(GLenum(GL_VERTEX_ARRAY))
         glDisableClientState(GLenum(GL_TEXTURE_COORD_ARRAY))
+        
+        glFlush()
         
         // we're double buffered so need to flush to screen
         openGLContext.flushBuffer()

@@ -96,3 +96,112 @@ game_controller_input_shim * unsafeControllerInputCast(game_input * input, int c
 {
     return (game_controller_input_shim *) &input->Controllers[controller];
 }
+
+// TODO write all this in swift and shim it
+DEBUG_PLATFORM_FREE_FILE_MEMORY(DEBUGPlatformFreeFileMemory)
+{
+    if (Memory)
+    {
+        free(Memory);
+    }
+}
+
+// TODO write all this in swift and shim it
+DEBUG_PLATFORM_READ_ENTIRE_FILE(DEBUGPlatformReadEntireFile)
+{
+    debug_read_file_result Result = {};
+    
+    NSString *frameworksPath = [[NSBundle mainBundle] resourcePath];
+    NSString *filePath = [NSString stringWithFormat:@"%@/%s", frameworksPath, Filename];
+    
+    int fd = open([filePath cStringUsingEncoding:NSUTF8StringEncoding], O_RDONLY);
+    if (fd != -1)
+    {
+        struct stat fileStat;
+        if (fstat(fd, &fileStat) == 0)
+        {
+            uint32 FileSize32 = fileStat.st_size;
+
+            kern_return_t result = vm_allocate((vm_map_t)mach_task_self(),
+                                               (vm_address_t*)&Result.Contents,
+                                               FileSize32,
+                                               VM_FLAGS_ANYWHERE);
+            if ((result == KERN_SUCCESS) && Result.Contents)
+            {
+                ssize_t BytesRead;
+                BytesRead = read(fd, Result.Contents, FileSize32);
+                if (BytesRead == FileSize32) // should have read until EOF
+                {
+                    Result.ContentsSize = FileSize32;
+                }
+                else
+                {
+                    DEBUGPlatformFreeFileMemory(Thread, Result.Contents);
+                    Result.Contents = 0;
+                }
+            }
+            else
+            {
+                printf("DEBUGPlatformReadEntireFile %s:  vm_allocate error: %d: %s\n",
+                       Filename, errno, strerror(errno));
+            }
+        }
+        else
+        {
+            printf("DEBUGPlatformReadEntireFile %s:  fstat error: %d: %s\n",
+                   Filename, errno, strerror(errno));
+        }
+        
+        close(fd);
+    }
+    else
+    {
+        printf("DEBUGPlatformReadEntireFile %s:  open error: %d: %s\n",
+               Filename, errno, strerror(errno));
+    }
+    
+    return Result;
+}
+
+// TODO write all this in swift and shim it
+DEBUG_PLATFORM_WRITE_ENTIRE_FILE(DEBUGPlatformWriteEntireFile)
+{
+    bool32 Result = false;
+    
+    NSString *frameworksPath = [[NSBundle mainBundle] resourcePath];
+    NSString *filePath = [NSString stringWithFormat:@"%@/%s", frameworksPath, Filename];
+    
+    int fd = open([filePath cStringUsingEncoding:NSUTF8StringEncoding], O_WRONLY | O_CREAT, 0644);
+    if (fd != -1)
+    {
+        ssize_t BytesWritten = write(fd, Memory, MemorySize);
+        Result = (BytesWritten == MemorySize);
+        
+        if (!Result)
+        {
+            
+        }
+        
+        close(fd);
+    }
+    else
+    {
+    }
+    
+    return Result;
+}
+
+debug_platform_read_entire_file* getReadFileFn()
+{
+    return DEBUGPlatformReadEntireFile;
+}
+
+debug_platform_write_entire_file* getWriteFileFn()
+{
+    return DEBUGPlatformWriteEntireFile;
+}
+
+debug_platform_free_file_memory* getFreeFileFn()
+{
+    return DEBUGPlatformFreeFileMemory;
+}

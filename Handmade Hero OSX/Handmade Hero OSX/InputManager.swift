@@ -63,10 +63,10 @@ import Foundation
     
     func hidDeviceAdded(context: UnsafeMutablePointer<Void>, result: IOReturn, sender: UnsafeMutablePointer<Void>, device: IOHIDDevice) {
         var manufacturer = "Unknown"
-        let mfnTypeRef: AnyObject = IOHIDDeviceGetProperty(device, kIOHIDManufacturerKey).takeUnretainedValue()
-        if (unsafeBitCast(mfnTypeRef, CFStringRef.self) != nil) {
-            manufacturer = unsafeBitCast(mfnTypeRef, CFStringRef.self) as String
-        }
+//        let mfnTypeRef: AnyObject = IOHIDDeviceGetProperty(device, kIOHIDManufacturerKey).takeUnretainedValue()
+//        if (unsafeBitCast(mfnTypeRef, CFStringRef.self) != nil) {
+//            manufacturer = unsafeBitCast(mfnTypeRef, CFStringRef.self) as String
+//        }
         
         var product = "Unknown"
         let prodTypeRef: AnyObject = IOHIDDeviceGetProperty(device, kIOHIDProductKey).takeUnretainedValue()
@@ -79,10 +79,10 @@ import Foundation
     
     func hidDeviceRemoved(context: UnsafeMutablePointer<Void>, result: IOReturn, sender: UnsafeMutablePointer<Void>, device: IOHIDDevice) {
         var manufacturer = "Unknown"
-        let mfnTypeRef: AnyObject = IOHIDDeviceGetProperty(device, kIOHIDManufacturerKey).takeUnretainedValue()
-        if (unsafeBitCast(mfnTypeRef, CFStringRef.self) != nil) {
-            manufacturer = unsafeBitCast(mfnTypeRef, CFStringRef.self) as String
-        }
+//        let mfnTypeRef: AnyObject = IOHIDDeviceGetProperty(device, kIOHIDManufacturerKey).takeUnretainedValue()
+//        if (unsafeBitCast(mfnTypeRef, CFStringRef.self) != nil) {
+//            manufacturer = unsafeBitCast(mfnTypeRef, CFStringRef.self) as String
+//        }
         
         var product = "Unknown"
         let prodTypeRef: AnyObject = IOHIDDeviceGetProperty(device, kIOHIDProductKey).takeUnretainedValue()

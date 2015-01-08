@@ -33,7 +33,9 @@ class PlatformLayer {
         gameMemory.memory.TransientStorageSize = TransientStorageSize
         gameMemory.memory.PermanentStorage = UnsafeMutablePointer<Void>.alloc(Int(permanantStorageSize))
         gameMemory.memory.TransientStorage = UnsafeMutablePointer<Void>.alloc(Int(TransientStorageSize))
-        
+        gameMemory.memory.DEBUGPlatformFreeFileMemory = getFreeFileFn()
+        gameMemory.memory.DEBUGPlatformReadEntireFile = getReadFileFn()
+        gameMemory.memory.DEBUGPlatformWriteEntireFile = getWriteFileFn()
         
         gameOffscreenBuffer.memory.Width = 960 /*magic value*/
         gameOffscreenBuffer.memory.Height = 540 /*magic value*/

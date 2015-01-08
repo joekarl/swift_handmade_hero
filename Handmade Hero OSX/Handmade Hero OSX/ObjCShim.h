@@ -78,4 +78,9 @@ typedef struct game_controller_input_shim {
 
 game_controller_input_shim * unsafeControllerInputCast(game_input * input, int controller);
 
+// Get debug file read callbacks
+debug_platform_read_entire_file* getReadFileFn();
+debug_platform_write_entire_file* getWriteFileFn();
+debug_platform_free_file_memory* getFreeFileFn();
+
 #endif

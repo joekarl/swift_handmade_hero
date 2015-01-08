@@ -106,11 +106,11 @@
 		CB469B371A50D8A40000A950 = {
 			isa = PBXGroup;
 			children = (
-				CBD97E181A54FB92006CCBFB /* CoreAudio.framework */,
 				CB469B601A50D8D90000A950 /* Handmade Hero Dylib.xcodeproj */,
 				CB469B421A50D8A40000A950 /* Handmade Hero OSX */,
 				CB469B531A50D8A40000A950 /* Handmade Hero OSXTests */,
 				CB469B411A50D8A40000A950 /* Products */,
+				CBD97E181A54FB92006CCBFB /* CoreAudio.framework */,
 				CB469B7E1A50DA090000A950 /* IOKit.framework */,
 				CB469B7C1A50DA000000A950 /* CoreVideo.framework */,
 				CB469B7A1A50D9F90000A950 /* OpenGL.framework */,

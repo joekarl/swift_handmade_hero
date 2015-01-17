@@ -27,7 +27,7 @@ I removed Casey's platform-independent game code from this repository. At the mo
 Once you clone or update from this repository, copy over the handmade .cpp/.h files from Casey's source code into the handmadeSrc folder (don't copy the platform layer files, just the platform independent files).
 You also need to copy over the assets into the handmadeAssets folder. For this copy the entire contents of the assets zip into the assets folder (should end up with a handmadeAssets/test/*.bmp folder structure)
 
-This repository works with Casey's handmade .cpp/.h files from handmade_hero_038_source.
+This repository works with Casey's handmade*.cpp/handmade*.h files from handmade_hero_045_source.
 
 ####Author
 

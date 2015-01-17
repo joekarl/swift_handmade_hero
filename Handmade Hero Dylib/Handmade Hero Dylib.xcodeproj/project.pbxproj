@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0192781A6B05C1004638FA /* handmade_math.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0192771A6B05C1004638FA /* handmade_math.h */; };
 		CB1FBF661A5F361900B06069 /* handmade_random.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1FBF631A5F361900B06069 /* handmade_random.h */; };
 		CB1FBF681A5F361900B06069 /* handmade_tile.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1FBF651A5F361900B06069 /* handmade_tile.h */; };
 		CB469B691A50D9450000A950 /* handmade_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = CB469B661A50D9450000A950 /* handmade_platform.h */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB0192771A6B05C1004638FA /* handmade_math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade_math.h; path = ../handmadeSrc/handmade_math.h; sourceTree = "<group>"; };
 		CB1FBF631A5F361900B06069 /* handmade_random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade_random.h; path = ../handmadeSrc/handmade_random.h; sourceTree = "<group>"; };
 		CB1FBF641A5F361900B06069 /* handmade_tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = handmade_tile.cpp; path = ../handmadeSrc/handmade_tile.cpp; sourceTree = "<group>"; };
 		CB1FBF651A5F361900B06069 /* handmade_tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handmade_tile.h; path = ../handmadeSrc/handmade_tile.h; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		CB60F0431A4D38C400492AB5 = {
 			isa = PBXGroup;
 			children = (
+				CB0192771A6B05C1004638FA /* handmade_math.h */,
 				CB1FBF631A5F361900B06069 /* handmade_random.h */,
 				CB1FBF641A5F361900B06069 /* handmade_tile.cpp */,
 				CB1FBF651A5F361900B06069 /* handmade_tile.h */,
@@ -66,6 +69,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0192781A6B05C1004638FA /* handmade_math.h in Headers */,
 				CB1FBF681A5F361900B06069 /* handmade_tile.h in Headers */,
 				CBD97E151A54F237006CCBFB /* handmade_intrinsics.h in Headers */,
 				CB1FBF661A5F361900B06069 /* handmade_random.h in Headers */,

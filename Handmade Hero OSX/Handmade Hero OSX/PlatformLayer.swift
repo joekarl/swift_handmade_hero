@@ -49,7 +49,7 @@ class PlatformLayer {
         gameCodeLoader.loadGameCode()
     }
     
-    func platformGameUpdateAndRender() {
+    func platformGameUpdateAndRender(targetFrameTime: real32) {
         // reload our dylib if it's changed
         gameCodeLoader.reloadGameCodeIfNeeded()
         
@@ -58,7 +58,7 @@ class PlatformLayer {
         
         // have to do this every frame because of me copying over all of the input state :/
         // TODO: get this value from display link
-        gameInput.memory.dtForFrame = 1.0 / 60.0
+        gameInput.memory.dtForFrame = targetFrameTime
         
         // sanity check
         if (gameCodeLoader.isInitialized) {

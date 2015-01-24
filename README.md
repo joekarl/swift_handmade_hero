@@ -17,6 +17,8 @@ Right now this just supports keyboard input but has the beginnings of controller
 
 As of right now, the controls are wasd for movement and you can also press the up arrow to speed up movement.
 
+To connect to the game initially, press the space bar.
+
 ###Swift ObjC shim
 So Swift is nice and all, but any API that takes a function pointer or needs to invoke the function behind a function pointer cannot be implemented in Swift. This is just a limitation of the language. So what you will find in this code is an ObjcShim file which is where anything that can't be done in Swift will reside. Some of these things just forward calls from the objc shim back in to the Swift layer, others will be invoked by the Swift layer to forward calls from the Swift layer into the platform independent layer.
 
@@ -27,7 +29,7 @@ I removed Casey's platform-independent game code from this repository. At the mo
 Once you clone or update from this repository, copy over the handmade .cpp/.h files from Casey's source code into the handmadeSrc folder (don't copy the platform layer files, just the platform independent files).
 You also need to copy over the assets into the handmadeAssets folder. For this copy the entire contents of the assets zip into the assets folder (should end up with a handmadeAssets/test/*.bmp folder structure)
 
-This repository works with Casey's handmade*.cpp/handmade*.h files from handmade_hero_045_source.
+This repository works with Casey's handmade*.cpp/handmade*.h files from handmade_hero_050_source.
 
 ####Author
 

@@ -172,10 +172,10 @@ import Foundation
             controllerInput.memory.RightShoulder.EndedDown = endedDownVal
             break
         case kHIDUsage_KeyboardEscape:
-            controllerInput.memory.Start.EndedDown = endedDownVal
+            controllerInput.memory.Back.EndedDown = endedDownVal
             break
         case kHIDUsage_KeyboardSpacebar:
-            controllerInput.memory.Back.EndedDown = endedDownVal
+            controllerInput.memory.Start.EndedDown = endedDownVal
             break
             
         default:

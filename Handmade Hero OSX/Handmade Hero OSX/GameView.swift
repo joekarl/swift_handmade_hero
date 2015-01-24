@@ -49,6 +49,8 @@ import CoreVideo
     let inputManager = InputManager()
     
     var platformLayer: PlatformLayer
+    
+    var targetFrameTime: real32 = 0
 
     required init?(coder: NSCoder) {
         platformLayer = PlatformLayer(anInputManager: inputManager)
@@ -129,6 +131,9 @@ import CoreVideo
         
         // setup opengl for displaylink
         CVDisplayLinkSetCurrentCGDisplayFromOpenGLContext(displayLinkRef, openGLContext.CGLContextObj, pixelFormat!.CGLPixelFormatObj)
+    
+        let cvtime = CVDisplayLinkGetNominalOutputVideoRefreshPeriod(displayLinkRef)
+        targetFrameTime = real32(cvtime.timeValue) / real32(cvtime.timeScale)
         
         // start the display link
         CVDisplayLinkStart(displayLinkRef)
@@ -137,6 +142,7 @@ import CoreVideo
     
     // callback that our shim will call on cvdisplaylink fire
     func getFrame(time: UnsafePointer<CVTimeStamp>) {
+        
         // lock the opengl context because the main thread might be drawing
         CGLLockContext(openGLContext.CGLContextObj)
         
@@ -159,7 +165,7 @@ import CoreVideo
         // TODO: update input
         
         // TODO: call into platform layer to update the game
-        platformLayer.platformGameUpdateAndRender()
+        platformLayer.platformGameUpdateAndRender(targetFrameTime)
         
         // TODO: update texture and draw to screen
         glTexSubImage2D(

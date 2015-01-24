@@ -12,7 +12,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Handmade_Hero_Swift_Platform" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Handmade_Hero_OSX" customModuleProvider="target">
             <connections>
                 <outlet property="gameView" destination="MXc-r6-ecp" id="1KK-qm-7AO"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
@@ -81,21 +81,21 @@
         <window title="Handmade Hero" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
-            <rect key="contentRect" x="476" y="268" width="800" height="600"/>
+            <rect key="contentRect" x="476" y="268" width="960" height="540"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="MXc-r6-ecp" customClass="GameView" customModule="Handmade_Hero_Swift_Platform" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="MXc-r6-ecp" customClass="GameView" customModule="Handmade_Hero_OSX" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
                     </customView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="MXc-r6-ecp" secondAttribute="trailing" id="PtT-0I-ZBq"/>
-                    <constraint firstItem="MXc-r6-ecp" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="U9B-qB-LQq"/>
-                    <constraint firstItem="MXc-r6-ecp" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="UQb-2z-KEU"/>
-                    <constraint firstAttribute="bottom" secondItem="MXc-r6-ecp" secondAttribute="bottom" id="jou-Qt-c3l"/>
+                    <constraint firstAttribute="trailing" secondItem="MXc-r6-ecp" secondAttribute="trailing" id="Ljb-co-2EW"/>
+                    <constraint firstItem="MXc-r6-ecp" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="UUx-Me-Kl9"/>
+                    <constraint firstItem="MXc-r6-ecp" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="yIj-8B-BMn"/>
+                    <constraint firstAttribute="bottom" secondItem="MXc-r6-ecp" secondAttribute="bottom" id="znv-l9-mYu"/>
                 </constraints>
             </view>
             <point key="canvasLocation" x="377" y="255"/>
